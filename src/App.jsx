@@ -163,34 +163,28 @@ function App() {
             <label className="form-label">Date of birth (Ngày Sinh)</label>
             <div className="date-group">
               <input 
-                type="number" 
+                type="text" 
                 name="birthDay"
                 value={formData.birthDay}
                 onChange={handleInputChange}
                 className="form-input"
                 placeholder="Ngày"
-                min="1"
-                max="31"
               />
               <input 
-                type="number" 
+                type="text" 
                 name="birthMonth"
                 value={formData.birthMonth}
                 onChange={handleInputChange}
                 className="form-input"
                 placeholder="Tháng"
-                min="1"
-                max="12"
               />
               <input 
-                type="number" 
+                type="text" 
                 name="birthYear"
                 value={formData.birthYear}
                 onChange={handleInputChange}
                 className="form-input"
                 placeholder="Năm"
-                min="1950"
-                max="2010"
               />
             </div>
             {(errors.birthDay || errors.birthMonth || errors.birthYear) && 
@@ -201,7 +195,7 @@ function App() {
           <div className="form-group">
             <label className="form-label">Phone number (Số điện thoại)</label>
             <input 
-              type="tel" 
+              type="text" 
               name="phoneNumber"
               value={formData.phoneNumber}
               onChange={handleInputChange}
